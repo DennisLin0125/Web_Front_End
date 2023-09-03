@@ -552,5 +552,45 @@ window.onload = function () {
             }
         }
     }
-    
+
+    //封裝一個公共的選項卡函數
+    /**
+     * ① 被點擊的元素   tabBtns
+     * ② 被切換顯示的元素  tabConts
+     */
+    function Tab(tabBtns, tabConts) {
+        for (let i = 0; i < tabBtns.length; i++) {
+            tabBtns[i].index = i;
+            tabBtns[i].onclick = function () {
+                for (let j = 0; j < tabBtns.length; j++) {
+                    tabBtns[j].className = '';
+                    tabConts[j].className = '';
+                }
+                this.className = 'active';
+                tabConts[this.index].className = 'active';
+            }
+        }
+    }
+
+    //點擊左側選項卡
+    leftTab();
+    function leftTab() {
+        //被點擊的元素                                        
+        let h4s = document.querySelectorAll('#wrapper #content .contentMain .goodsDetailWrap .leftAside .asideTop h4');
+        //被切換顯示的元素
+        let divs = document.querySelectorAll('#wrapper #content .contentMain .goodsDetailWrap .leftAside .asideBottom>div');
+        //調用函數                             
+        Tab(h4s, divs);
+    }
+
+    //點擊右側選項卡
+    rightTab();
+    function rightTab() {
+        //被點擊的元素                             
+        let lis = document.querySelectorAll('#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabBtns li');
+        //被切換顯示的元素
+        let divs = document.querySelectorAll('#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabContents div');
+        //調用函數                            
+        Tab(lis, divs);
+    }
 }
