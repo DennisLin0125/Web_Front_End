@@ -466,6 +466,85 @@
                 // 右側商品詳情區結束
             }
             // 中間區域結束
+
+            // 商品詳情中間部分開始
+            .goodsDetailWrap {
+                width: 1200px;
+                margin: 30px autu 0;
+                // 左邊側邊攔開始
+                .leftAside {
+                    width: 210px;
+                    border: 1px solid #ccc;
+                    .clearfix();
+                    // 上面
+                    .asideTop {
+                        .clearfix();
+                        h4 {
+                            width: 105px;
+                            height: 40px;
+                            background: #fff;
+                            float: left;
+                            text-align: center;
+                            line-height: 40px;
+                            border-bottom: 1px solid #ccc;
+                            border-top: 3px solid #fff;
+                            &.active {
+                                border-top: 3px solid #e1251b;
+                                width: 105px;
+                                line-height: 37px;
+                                text-align: center;
+                                line-height: 40px;
+                                border-bottom: none;
+                            }
+                        }
+                    }
+                    // 下面
+                    .asideBottom {
+                        padding: 10px;
+                        div {
+                            &.active {
+                                ul {
+                                    &.goodslist1 {
+                                        li {
+                                            width: 50%;
+                                            border-bottom: 1px dashed #ededed;
+                                            line-height: 28px;
+                                            float: left;
+                                        }
+                                    }
+                                    &.goodslist2 {
+                                        margin: 5px 0 15px;
+                                        li {
+                                            border-bottom: 1px solid #ededed;
+                                            img {
+                                                width: 152px;
+                                            }
+                                            span {}
+                                            p {
+                                                font-size: 16px;
+                                                color: #c81623;
+                                            }
+                                            .button {
+                                                margin-top: 5px;
+                                                margin-bottom: 5px;
+                                                text-align: center;
+                                                a {
+                                                    color: #8c8c8c;
+                                                    padding: 2px 14px;
+                                                    line-height: 18px;
+                                                    border: 1px solid #8c8c8c;
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // 左邊側邊攔結束
+            }
+            // 商品詳情中間部分結束
         }
     }
     // 內容區域結束
