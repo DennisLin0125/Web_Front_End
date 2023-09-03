@@ -560,7 +560,7 @@ smallPic.onmouseleave = function () {
 
 ### 十、放大鏡鼠標移動實現蒙版元素的拖拽效果
 
-![](素材\蒙版元素移動的距離1.png)
+![](素材\蒙版元素移動的距離.png)
 
 ~~~js
 smallPic.onmousemove = function (event) {
