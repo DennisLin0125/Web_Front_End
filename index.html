@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商品詳情頁面</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- 最外層包裹元素 -->
+    <div id="wrapper">
+        <!-- 頭部 -->
+        <header id="header">
+            <!-- 上面部分 -->
+            <div class="headTop">
+                <!-- 版心元素 -->
+                <div class="headTopMain">
+                    <!-- 左側 -->
+                    <div class="left">
+                        <h5>歡迎來到商品頁!   請</h5>
+                        <p>
+                            <a href="javascript:;">登入</a>
+                            <a href="javascript:;">註冊</a>
+                        </p>
+                    </div>
+                    <!-- 右側 -->
+                    <div class="right">
+                        <nav>
+                            <a href="javascript:;">我的訂單</a>
+                            <a href="javascript:;">我的購物車</a>
+                            <a href="javascript:;">我的優選</a>
+                            <a href="javascript:;">優選會員</a>
+                            <a href="javascript:;">企業採購</a>
+                            <a href="javascript:;">關注我們</a>
+                            <a href="javascript:;">合作招商</a>
+                            <a href="javascript:;">商家後台</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <!-- 下面部分 -->
+            <div class="headBottom">
+                <!-- 版心元素 -->
+                <div class="headBottomMain">
+                    <!-- logo -->
+                    <h1 class="logo">
+                        <a href="javascript:;">
+                            <img src="images/logo.png">
+                        </a>
+                    </h1>
+                    <!-- 搜索框 -->
+                    <div class="search">
+                        <input type="text" placeholder="請輸入搜索內容">
+                        <input type="button" value="搜索">
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- 頭部結束 -->
+        <!-- 分類導航開始 -->
+        <div id="navWrap">
+            <!-- 版心元素 -->
+            <div class="navWrapMain">
+                <a href="javascript:;">全部商品分類</a>
+                <a href="javascript:;">服裝城</a>
+                <a href="javascript:;">美妝館</a>
+                <a href="javascript:;">尚優選超市</a>
+                <a href="javascript:;">全球購</a>
+                <a href="javascript:;">閃購</a>
+                <a href="javascript:;">團購</a>
+                <a href="javascript:;">有趣</a>
+                <a href="javascript:;">秒殺</a>
+            </div>
+        </div>
+        <!-- 分類導航結束 -->
+
+        <!-- 內容區域開始 -->
+        <div id="content">
+            <!-- 版心元素 -->
+            <div class="contentMain">
+                <!-- 路徑導航開始 -->
+                <div id="navPath">
+                    
+                </div>
+                <!-- 路徑導航結束 -->
+
+                <!-- 中間區域開始 -->
+                <div id="center">
+                    <!-- 左側放大鏡開始 -->
+                    <div id="left">
+                        <!-- 上邊 -->
+                        <div id="leftTop">
+                            <!-- 小圖框 -->
+                            <div id="smallPic">
+                                <!-- 小圖片 -->
+                                <img src="images/s1.png" alt="">
+                                <!-- 蒙版元素 -->
+                            </div>
+                            <!-- 大圖框 -->
+                        </div>
+                        <!-- 下邊 -->
+                        <div id="leftBottom">
+                            <a href="javascript:;" class="prev"> < </a>
+                            <div id="piclist">
+                                <ul>
+
+                                </ul>
+                            </div>
+                            <a href="javascript:;" class="next"> > </a>
+                        </div>
+                    </div>
+                    <!-- 左側放大鏡結束 -->
+
+                    <!-- 右側商品詳情區開始 -->
+                    <div id="right">
+                        <!-- 商品詳情數據結構開始 -->
+                        <div class="rightTop">
+                            
+                        </div>
+                        <!-- 商品詳情數據結構結束 -->
+
+
+                        <!-- 商品參數數據結構開始 -->
+                        <div class="rightBottom">
+                            <!-- 選擇之後結果的區域開始 -->
+                            <div class="choose">
+            
+                            </div>
+                            <!-- 選擇之後結果的區域結束 -->
+
+                            <!-- 商品參數的選擇區域開始 -->
+                            <div class="chooseWrap">
+                                
+                            </div>
+                            <!-- 商品參數的選擇區域結束 -->
+
+                            <!-- 加入購物車以及數量區域開始 -->
+                            <div class="addCart">
+                                <div class="count">
+                                    <input type="text">
+                                    <a href="javascript:;">+</a>
+                                    <a href="javascript:;">-</a>
+                                </div>
+                                <button>加入購物車</button>
+                            </div>
+                            <!-- 加入購物車以及數量區域結束 -->
+                        </div>
+                        <!-- 商品參數數據結構結束 -->
+                    </div>
+                    <!-- 右側商品詳情區結束 -->
+                </div>
+                <!-- 中間區域結束 -->
+            </div>
+        </div>
+        <!-- 內容區域結束 -->
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
