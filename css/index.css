@@ -635,6 +635,9 @@
   top: 0px;
 }
 #wrapper .rightAside.asideClose {
+  right: -294px;
+}
+#wrapper .rightAside.asideOpen {
   right: 0px;
 }
 #wrapper .rightAside .btns {
@@ -648,6 +651,9 @@
 }
 #wrapper .rightAside .btns.btnsClose {
   background-image: url('../images/list.png');
+}
+#wrapper .rightAside .btns.btnsOpen {
+  background-image: url('../images/cross.png');
 }
 #wrapper .rightAside .content {
   width: 294px;

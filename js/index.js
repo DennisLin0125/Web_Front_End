@@ -593,4 +593,48 @@ window.onload = function () {
         //調用函數                            
         Tab(lis, divs);
     }
+
+    rightAsideBind();
+    function rightAsideBind(){
+        /**
+         * 思路：
+         * 1、先找到按鈕元素，發生點擊事件
+         * 2、記錄一個初始的狀態，在點擊事件的內容進行判斷，如果為關閉則展開，否則為關閉（狀態取反）
+         * 3、如果為展開則設置按鈕和側邊欄對應的class效果，關閉亦如此
+         */
+
+        //1、找按鈕元素
+        var btns = document.querySelector('#wrapper .rightAside .btns');
+
+        //記錄初始狀態
+        var flag = true; //關閉
+
+        //查找側邊欄元素
+        var rightAside = document.querySelector('#wrapper .rightAside');
+
+        //2、發生點擊事件
+        btns.onclick = function(){
+
+            //判斷
+            if(flag){
+                //展開
+                //  flag = false;
+
+                btns.className = "btns btnsOpen";
+
+                rightAside.className = "rightAside asideOpen";
+
+            }else{
+                //關閉
+                //  flag = true;
+                btns.className = "btns btnsClose"
+
+                rightAside.className = "rightAside asideClose";
+            }
+
+            //無論前面的if和else執行的到底是誰，最終flag的狀態都是在原來基礎之上進行取反
+            flag = !flag;
+        }
+    }
+
 }
