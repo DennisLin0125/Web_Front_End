@@ -582,3 +582,39 @@
   background: #e1251b;
   border: none;
 }
+#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabBtns {
+  background: #ededed;
+}
+#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabBtns::after {
+  clear: both;
+  display: block;
+  content: '';
+}
+#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabBtns li {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  background: #fff;
+  height: 40px;
+  padding-right: 11px;
+  padding-left: 11px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+}
+#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabBtns li.active {
+  background: red;
+  border-left: 1px solid #ddd;
+}
+#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabBtns li.active a {
+  color: #fff;
+}
+#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabContents div {
+  padding-left: 20px;
+  line-height: 25px;
+  display: none;
+}
+#wrapper #content .contentMain .goodsDetailWrap .rightDetail .bottomDetail .tabContents div.active {
+  margin: 10px 0;
+  display: block;
+}

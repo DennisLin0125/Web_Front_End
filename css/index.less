@@ -642,6 +642,49 @@
                         }
                     }
                     // 選擇搭配結束
+
+                    // 選項卡開始
+                    .bottomDetail {
+                        
+                        // 菜單
+                        .tabBtns {
+                            background: #ededed;
+                            .clearfix();
+                            li {
+                                border-top: 1px solid #ddd;
+                                border-bottom: 1px solid #ddd;
+                                border-right: 1px solid #ddd;
+                                background: #fff;
+                                height: 40px;
+                                padding-right: 11px;
+                                padding-left: 11px;
+                                float: left;
+                                text-align: center;
+                                line-height: 40px;
+
+                                &.active {
+                                    background: red;
+                                    border-left: 1px solid #ddd;;
+                                    a {
+                                        color: #fff;
+                                    }
+                                }
+                            }
+                        }
+                        // 內容
+                        .tabContents {
+                            div {
+                                padding-left: 20px;
+                                line-height: 25px;
+                                display: none;
+                                &.active {
+                                    margin: 10px 0;
+                                    display: block;
+                                }
+                            }
+                        }
+                    }
+                    // 選項卡結束
                 }
                 // 右邊結構結束
             }
