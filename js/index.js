@@ -500,6 +500,57 @@ window.onload = function () {
         }
     
         oldPrice.innerText = price;
+
+        // 3、將變化的價格寫入到左側標籤
+        var leftprice = document.querySelector('#wrapper #content .contentMain .goodsDetailWrap .rightDetail .chooseBox .listWrap .left p');
+
+        leftprice.innerText = '$' + price;
+
+        // 4、遍歷選擇搭配中所有的複選框元素、看是否有選中
+        var ipts = document.querySelectorAll('#wrapper #content .contentMain .goodsDetailWrap .rightDetail .chooseBox .listWrap .middle li input');
+
+        for (let j = 0; j < ipts.length; j++) {
+            if (ipts[j].checked) {
+                price += Number(ipts[j].value);
+            }
+        }
+
+        // 5、右側套餐價重新渲染
+        var newprice = document.querySelector('#wrapper #content .contentMain .goodsDetailWrap .rightDetail .chooseBox .listWrap .right i');
+
+        newprice.innerText = '$' + price;
+    }   
+    
+    // /選擇搭配中間區域複選框選中套餐價變動效果
+    chooseprice();
+    function chooseprice(){
+    /**
+    * 思路：
+    * 1、先獲取中間區域中所有的複選框元素
+    * 2、遍歷這些元素取出他們的價格，和左側的基礎價格進行累加，累加之後重新寫回套餐價標籤裡面
+    */
+
+        //1、先獲取複選框元素
+        var ipts = document.querySelectorAll('#wrapper #content .contentMain .goodsDetailWrap .rightDetail .chooseBox .listWrap .middle li input');
+        var leftprice = document.querySelector('#wrapper #content .contentMain .goodsDetailWrap .rightDetail .chooseBox .listWrap .left p');
+        var newprice = document.querySelector('#wrapper #content .contentMain .goodsDetailWrap .rightDetail .chooseBox .listWrap .right i');
+        //2、遍歷這些複選框
+        for(var i = 0 ; i < ipts.length;i++){
+            ipts[i].onclick = function(){
+                var oldprice = Number(leftprice.innerText.slice(1));
+                for(var j = 0 ; j < ipts.length;j++){
+                    if(ipts[j].checked){
+
+                            //新的價格 = 左側價格 + 選中複選框附加價格
+                            oldprice = oldprice + Number(ipts[j].value);
+
+                    }
+                }
+
+                //3、重新寫回到套餐價標籤中
+                newprice.innerText = '$' + oldprice;
+            }
+        }
     }
-  
+    
 }
