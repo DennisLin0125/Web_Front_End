@@ -635,7 +635,7 @@
   top: 0px;
 }
 #wrapper .rightAside.asideClose {
-  right: -294px;
+  right: 0px;
 }
 #wrapper .rightAside .btns {
   width: 35px;
@@ -648,4 +648,50 @@
 }
 #wrapper .rightAside .btns.btnsClose {
   background-image: url('../images/list.png');
+}
+#wrapper .rightAside .content {
+  width: 294px;
+  background: bisque;
+  position: absolute;
+  left: 6px;
+  top: 0px;
+  bottom: 0px;
+  z-index: 50;
+}
+#wrapper .rightAside .navlist {
+  position: absolute;
+  left: -29px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#wrapper .rightAside .navlist li {
+  width: 35px;
+  height: 35px;
+  position: relative;
+}
+#wrapper .rightAside .navlist li p {
+  width: 35px;
+  height: 35px;
+  background: #7a6e6e;
+  background-image: url('../images/toolbars.png');
+  background-position: -87px -174px;
+  transition: 0.5s;
+}
+#wrapper .rightAside .navlist li i {
+  width: 62px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  position: absolute;
+  left: 35px;
+  transition: 0.5s;
+  top: 0px;
+  background: #7a6e6e;
+}
+#wrapper .rightAside .navlist li:hover p {
+  background: pink;
+}
+#wrapper .rightAside .navlist li:hover i {
+  background: pink;
+  left: -62px;
 }
